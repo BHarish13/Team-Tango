@@ -5,11 +5,8 @@
 }
 html {
 	font-size: 10px;
-	font-family: 'Montserrat', sans-serif;
+	font-family:  sans-serif;
 	scroll-behavior: smooth;
-}
-a {
-	text-decoration: none;
 }
 .container {
 	min-height: 100vh;
@@ -41,7 +38,7 @@ p {
 	text-align: center;
 }
 .section-title span {
-	color: crimson;
+	color: red;
 }
 
 .brand h1 {
@@ -50,10 +47,10 @@ p {
 	color: white;
 }
 .brand h1 span {
-	color: crimson;
+	color: red;
 }
 
-/* Header section */
+
 #header {
 	position: fixed;
 	z-index: 1000;
@@ -126,11 +123,10 @@ p {
 }
 
 #hero {
-	background-image: url(./img/hero-bg.png);
+	background-image: url(https://i.postimg.cc/KcWrw1Zh/hariiiiii.jpg);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
-	z-index: 1;
 }
 #hero::after {
 	content: '';
@@ -140,8 +136,7 @@ p {
 	height: 100%;
 	width: 100%;
 	background-color: black;
-	opacity: 0.7;
-	z-index: -1;
+	opacity: 0.5;
 }
 #hero .hero {
 	max-width: 1200px;
@@ -152,21 +147,11 @@ p {
 #hero h1 {
 	display: block;
 	width: fit-content;
-	font-size: 4rem;
+	font-size: 72px;
 	position: relative;
 	color: transparent;
 	animation: text_reveal 0.5s ease forwards;
 	animation-delay: 1s;
-}
-#hero h1:nth-child(1) {
-	animation-delay: 1s;
-}
-#hero h1:nth-child(2) {
-	animation-delay: 2s;
-}
-#hero h1:nth-child(3) {
-	animation: text_reveal_name 0.5s ease forwards;
-	animation-delay: 3s;
 }
 #hero h1 span {
 	position: absolute;
@@ -174,39 +159,29 @@ p {
 	left: 0;
 	height: 100%;
 	width: 0;
-	background-color: crimson;
+	background-color: white;
 	animation: text_reveal_box 1s ease;
 	animation-delay: 0.5s;
 }
-#hero h1:nth-child(1) span {
-	animation-delay: 0.5s;
-}
-#hero h1:nth-child(2) span {
-	animation-delay: 1.5s;
-}
-#hero h1:nth-child(3) span {
-	animation-delay: 2.5s;
-}
-
-#services .services {
+#skills .skills {
 	flex-direction: column;
 	text-align: center;
 	max-width: 1500px;
 	margin: 0 auto;
 	padding: 100px 0;
 }
-#services .service-top {
+#skills .skills-top {
 	max-width: 500px;
 	margin: 0 auto;
 }
-#services .service-bottom {
+#skills .skills-bottom {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
 	margin-top: 50px;
 }
-#services .service-item {
+#skills .skills-item {
 	flex-basis: 80%;
 	display: flex;
 	align-items: flex-start;
@@ -214,14 +189,12 @@ p {
 	flex-direction: column;
 	padding: 30px;
 	border-radius: 10px;
-	background-image: url(./img/img-1.png);
-	background-size: cover;
 	margin: 10px 5%;
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
 }
-#services .service-item::after {
+#skills .skills-item::after {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -232,38 +205,33 @@ p {
 	opacity: 0.9;
 	z-index: -1;
 }
-#services .service-bottom .icon {
-	height: 80px;
-	width: 80px;
-	margin-bottom: 20px;
-}
-#services .service-item h2 {
+#skills .skills-item h2 {
 	font-size: 2rem;
 	color: white;
 	margin-bottom: 10px;
 	text-transform: uppercase;
 }
-#services .service-item p {
+#skills .skills-item p {
 	color: white;
 	text-align: left;
 }
 
-#projects .projects {
+#Experience .Experience {
 	flex-direction: column;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 100px 0;
 }
-#projects .projects-header h1 {
+#Experience .Experience-header h1 {
 	margin-bottom: 50px;
 }
-#projects .all-projects {
+#Experience .all-Experience {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 }
-#projects .project-item {
+#Experience .Experience-item {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -273,7 +241,7 @@ p {
 	overflow: hidden;
 	border-radius: 10px;
 }
-#projects .project-info {
+#Experience .Experience-info {
 	padding: 30px;
 	flex-basis: 50%;
 	height: 100%;
@@ -284,25 +252,25 @@ p {
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	color: white;
 }
-#projects .project-info h1 {
+#Experience .Experience-info h1 {
 	font-size: 4rem;
 	font-weight: 500;
 }
-#projects .project-info h2 {
+#Experience .Experience-info h2 {
 	font-size: 1.8rem;
 	font-weight: 500;
 	margin-top: 10px;
 }
-#projects .project-info p {
+#Experience .Experience-info p {
 	color: white;
 }
-#projects .project-img {
+#Experience .Experience-img {
 	flex-basis: 50%;
 	height: 300px;
 	overflow: hidden;
 	position: relative;
 }
-#projects .project-img:after {
+#Experience .Experience-img:after {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -312,10 +280,10 @@ p {
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	opacity: 0.7;
 }
-#projects .project-img img {
+#Experience .Experience-img img {
 	transition: 0.3s ease transform;
 }
-#projects .project-item:hover .project-img img {
+#Experience .Experience-item:hover .Experience-img img {
 	transform: scale(1.1);
 }
 
@@ -342,12 +310,6 @@ p {
 #about .col-right p {
 	margin-bottom: 20px;
 }
-#about .col-right .cta {
-	color: black;
-	margin-bottom: 50px;
-	padding: 10px 20px;
-	font-size: 2rem;
-}
 #about .col-left .about-img {
 	height: 100%;
 	width: 100%;
@@ -361,7 +323,7 @@ p {
 	top: 19px;
 	height: 98%;
 	width: 98%;
-	border: 7px solid crimson;
+	border: 7px solid red;
 	z-index: -1;
 }
 
@@ -408,45 +370,6 @@ p {
 	font-weight: 500;
 }
 
-#footer {
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-}
-#footer .footer {
-	min-height: 200px;
-	flex-direction: column;
-	padding-top: 50px;
-	padding-bottom: 10px;
-}
-#footer h2 {
-	color: white;
-	font-weight: 500;
-	font-size: 1.8rem;
-	letter-spacing: 0.1rem;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-#footer .social-icon {
-	display: flex;
-	margin-bottom: 30px;
-}
-#footer .social-item {
-	height: 50px;
-	width: 50px;
-	margin: 0 5px;
-}
-#footer .social-item img {
-	filter: grayscale(1);
-	transition: 0.3s ease filter;
-}
-#footer .social-item:hover img {
-	filter: grayscale(0);
-}
-#footer p {
-	color: white;
-	font-size: 1.3rem;
-}
-
-
 @keyframes text_reveal_box {
 	50% {
 		width: 100%;
@@ -462,18 +385,8 @@ p {
 		color: white;
 	}
 }
-@keyframes text_reveal_name {
-	100% {
-		color: crimson;
-		font-weight: 500;
-	}
-}
 
-@media only screen and (min-width: 768px) {
-	.cta {
-		font-size: 2.5rem;
-		padding: 20px 60px;
-	}
+@media only screen and (min-width: 768px)
 	h1.section-title {
 		font-size: 6rem;
 	}
@@ -483,27 +396,24 @@ p {
 		font-size: 7rem;
 	}
 
-	#services .service-bottom .service-item {
+	#skills .skills-bottom .skills-item {
 		flex-basis: 45%;
 		margin: 2.5%;
 	}
 
-	#projects .project-item {
+	#Experience .Experience-item {
 		flex-direction: row;
 	}
-	#projects .project-item:nth-child(even) {
-		flex-direction: row-reverse;
-	}
-	#projects .project-item {
+	#Experience .Experience-item {
 		height: 400px;
 		margin: 0;
 		width: 100%;
 		border-radius: 0;
 	}
-	#projects .all-projects .project-info {
+	#Experience .all-Experience .Experience-info {
 		height: 100%;
 	}
-	#projects .all-projects .project-img {
+	#Experience .all-Experience .Experience-img {
 		height: 100%;
 	}
 
@@ -520,7 +430,7 @@ p {
 		top: 34px;
 		height: 98%;
 		width: 98%;
-		border: 10px solid crimson;
+		border: 10px solid red;
 	}
 	#about .col-right {
 		text-align: left;
@@ -563,9 +473,6 @@ p {
 
 @media only screen and (min-width: 1200px) {
 
-	#header .hamburger {
-		display: none;
-	}
 	#header .nav-list ul {
 		position: initial;
 		display: block;
@@ -584,7 +491,7 @@ p {
 	}
 
 
-	#services .service-bottom .service-item {
+	#skills .skills-bottom .skills-item {
 		flex-basis: 22%;
 		margin: 1.5%;
 	}
